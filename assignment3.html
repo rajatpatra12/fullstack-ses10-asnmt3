@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home page</title>
+</head>
+<body id="body">
+    
+	<script type="text/javascript">
+    //class dog with its method
+     class Dog{
+        constructor(name){
+            this.name=name;
+        }
+        speak(){
+            return "woof";
+        }
+
+     }
+     //class labrodor extending class dog 
+     class Labrador extends Dog{
+        constructor(color,breedWeight){
+            super();
+            this.color=color;
+            this.breedWeight=breedWeight;
+        }
+        //this method overrides the older speak method 
+        speak(){
+            return "Labrador says woof";
+        }
+     }
+
+     var newdog=new Labrador("white","lab");
+     console.log(newdog.speak());
+
+    </script>
+</body>
+</html>
